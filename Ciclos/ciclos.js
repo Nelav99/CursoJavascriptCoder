@@ -25,7 +25,7 @@ while(numero !== 6 && counter !== 2) {
     counter++;
 }
 
-if(numero !== 2) {
+if(numero == 6) {
     console.log('Felicitaciones!! Adivinaste!!')
 } else {
     console.log('Te quedaste sin intentos, vuelve a intentarlo')
@@ -37,10 +37,14 @@ let alumno;
 let calificacion;
 
 do {
-    alumno = prompt('Ingresa el nombre del alumno');
+    alumno = prompt('Ingresa el nombre del alumno. Coloca "ESC" en ambos inputs en caso de querer finalizar la lista.');
     calificacion = Number(prompt('Calificación del alumno: '));
-    console.log(alumno + ' recibio una calificacion de ' + calificacion);
-} while (alumno != 'ESC');
+    if (alumno == 'ESC') {
+        console.log('Lista finalizada.');
+    } else {
+        console.log(alumno + ' recibio una calificacion de ' + calificacion);
+    }
+} while (alumno !== 'ESC');
 
 
 // Menu banco
