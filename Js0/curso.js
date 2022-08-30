@@ -162,6 +162,7 @@ function saludar(nombre = 'Carlos') {
 saludar() //Hola Carlos
 saludar('Paola') //Hola Paola
 
+//Declaracion de clases
 //Clases forma antigua
 function Inventario(nombre) {
     this.nombre = nombre;
@@ -188,7 +189,6 @@ libros.add('Aprendiendo Javascript', 5);
 libros.cantidad('Aprendiendo JavaScript');
 
 //Clases forma moderna
-
 class Inventario {
     constructor(nombre) {
         this.nombre = nombre;
@@ -215,4 +215,75 @@ libros.getNombre();
 libros.add('Aprendiendo Javascript', 5);
 
 libros.cantidad('Aprendiendo JavaScript');
+
+// Ciclo While
+let condicion;
+
+while(condicion) {
+    // codigo
+}
+
+//Ejemplo While
+let i = 1;
+while(i < 11) {
+    console.log(i);
+    i++;
+}
+// Ejemplo funcion + while
+function bucleWhile(num) {
+    let i = 0;
+    while(i < num) {
+        console.log(i);
+        i++;
+    }
+}
+
+bucleWhile(11);
+
+// ciclo Do...While
+let condicion;
+do {
+    //codigo
+} while(condicion);
+
+//Ejemplo Do...While
+function doWhile(num) {
+    let i = 0;
+    do {
+        console.log(i);
+        i++;
+    } while(i < num);
+}
+
+doWhile(11);
+
+// Ciclo For
+for(inicializacion; condicion de permanencia; actualizacion) {
+
+}
+
+// Ejemplo For
+function bucleFor(num){
+    for(let i = 0; i < num; i++) {
+        console.log(i)
+    }
+}
+
+bucleFor(11);
+
+//Arrays
+// Sintaxis
+const array = [dato1, dato2, dato3];
+// Llamado
+array[2]; // nombre del array[posicion]
+
+// Ejemplo arrays:
+const obj = {
+    unArray: new Array(100)
+};
+const unArray = obj.unArray;
+
+for(let i = 0, longitud = unArray.length; i < longitud; i++) {
+    obj.unArray[i] = 'Hola';
+}
 

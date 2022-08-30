@@ -42,10 +42,3 @@ alert('Resumen: \n' +
             'Impuestos: ' + '+' + iva + '\n' +
             'Total: ' + total);
 alert(confirm('Su total a pagar es: ' + total + '\n' + '¿Desea confirmar la compra?'));
-
-const suma  = (a, b) => { return a + b }
-//Si es una función de una sola línea con retorno podemos evitar escribir el cuerpo.
-const resta = (a, b) =>  a - b ;
-console.log( suma(15,20) );
-console.log( resta(20,5) );
-
